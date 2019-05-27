@@ -78,7 +78,7 @@ spec:
         imagePullPolicy: {{ .Values.cheImagePullPolicy }}
         securityContext:
           runAsUser: {{ .Values.global.securityContext.runAsUser }}
-          fsGroup: {{ .Values.global.securityContext.fsGroup }}
+          #fsGroup: {{ .Values.global.securityContext.fsGroup }}
         livenessProbe:
           httpGet:
             path: /api/system/state
